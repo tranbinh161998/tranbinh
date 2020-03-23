@@ -1,0 +1,1 @@
+countNews.js

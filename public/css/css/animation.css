@@ -1,0 +1,132 @@
+
+body {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif; 
+}
+#footer{
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+}
+#imageAnimation {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    z-index: -1;
+    opacity: 10%;
+    animation-name: opera;
+    animation-iteration-count: infinite;
+    animation-duration:linear;
+    animation-duration: 25s;
+}
+@keyframes opera {
+  0%{margin-top: -100px; margin-left: 0px;
+  }
+  50%{
+    margin-top: 100px; margin-left: 50%;
+  }
+  100%{
+    margin-top: -100px; margin-left: 0px;
+  }
+
+}
+#navB{
+    display: none;
+}
+@media (max-width: 991px) {
+    #navB{
+        display: block;
+        float: right;
+        cursor: pointer;
+    }
+}
+
+
+
+#loading {
+     position: fixed;
+     left: 42%;
+     top: 40%;
+     height: 50px;
+     width: 150px;
+     text-align: center;
+     padding-top: 10px;
+     border-radius: 8px;
+     -webkit-border-radius: 8px;
+     -moz-border-radius: 8px;
+ }
+ #number_list_news{
+  margin: 0 auto;
+ }
+
+.list-hover{
+  animation-duration: 1s;
+  animation-name: list-hover;
+  animation-iteration-count: infinite;
+}
+.btb {
+  display: inline-block;
+  
+/*   border-radius: 1px; */
+  text-decoration: none;
+  color: gray;
+  
+  /* Set up the hover */
+  /* If you aren't using autoprefix, remember to prefix the gradient for other browsers */
+  background-image: linear-gradient(dodgerblue, dodgerblue), linear-gradient(#fff,#fff);
+  background-size: 0 1px, auto;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  transition: all .2s ease-out;
+}
+
+.btb:hover {
+  /* The following line makes the underline only as wide as the text */
+  /* background-size: calc(100% - 2em) 5px, auto; */
+  background-size: 100% 2px, auto;
+}
+
+#return-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.7);
+  width: 50px;
+  height: 50px;
+  display: block;
+  text-decoration: none;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  border-radius: 35px;
+  display: none;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#return-to-top i {
+  color: #fff;
+  margin: 0;
+  position: relative;
+  left: 16px;
+  top: 13px;
+  font-size: 19px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#return-to-top:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+#return-to-top:hover i {
+  color: #fff;
+  top: 5px;
+}
+
+
+
+
+ 
